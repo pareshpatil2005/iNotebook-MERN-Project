@@ -1,38 +1,87 @@
-.App {
+.custom-bg {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.custom-card {
+  border-radius: 1.5rem;
+  background: #fff;
+  border: none;
+}
+
+.custom-title {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  color: #fff;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem 0;
+  margin: -1.5rem -1.5rem 2rem -1.5rem;
+  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.1);
+}
+
+.custom-input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 0 0.2rem rgba(106, 17, 203, 0.15);
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  color: #fff;
+  border: none;
+  transition: background 0.3s;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+}
+
+/* Make note tag badge a little bigger */
+.badge.bg-secondary {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 1rem;
+  padding: 0.55em 1em;
+  font-size: 1.01em;
+}
+
+
+
+.container {
+  margin-top: 20px; /* Adjust if your navbar is taller/shorter */
+}
+
+.fixed-alert {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1055; /* above modals and navbar */
+  min-width: 320px;
+  max-width: 90vw;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(106,17,203,0.13);
+  pointer-events: auto;
+  transition: opacity 0.3s;
+}
+
+
+/* Add these styles to src/App.css */
+.inotebook-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
   text-align: center;
+  margin-top: 1.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gradient-text {
+  background: linear-gradient(90deg, #fff 0%, #b3c6ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inotebook-heading + .lead {
+  font-size: 1.35rem;
+  font-weight: 500;
 }
