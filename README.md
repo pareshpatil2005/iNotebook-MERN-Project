@@ -1,7 +1,4 @@
 # 📝 iNotebook – Your Personal Cloud Notebook
-
-![iNotebook Banner](https://img.icons8.com/color/96/000000/notebook.png)
-
 ---
 
 ## 🚀 About iNotebook
